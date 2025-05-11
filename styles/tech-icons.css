@@ -1,0 +1,17 @@
+.tech-html { color: #E34F26; }
+.tech-css { color: #1572B6; }
+.tech-js { color: #F7DF1E; }
+.tech-tailwind { color: #06B6D4; }
+.tech-git { color: #F05032; }
+.tech-vscode { color: #007ACC; }
+.tech-github { color: #181717; }
+.tech-android-studio { color: #3DDC84; }
+
+.tech-card {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}

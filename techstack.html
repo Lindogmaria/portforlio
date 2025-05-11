@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stack | Maria Lindog</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#6366f1',
+            secondary: '#8b5cf6',
+          }
+        },
+      },
+    }
+  </script>  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/tech-icons.css">
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navigation -->  <nav class="fixed top-0 left-0 right-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <span class="text-xl font-bold gradient-text hover:scale-105 transition-transform">Maria.dev</span>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 transition-all" title="Toggle Menu" aria-label="Toggle Menu">
+        <span class="w-6 h-0.5 bg-primary rounded-full transition-all origin-left"></span>
+        <span class="w-6 h-0.5 bg-primary rounded-full transition-all"></span>
+        <span class="w-6 h-0.5 bg-primary rounded-full transition-all origin-left"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div id="navLinks" class="fixed md:static top-[60px] left-0 w-full md:w-auto bg-white/95 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none pb-4 md:pb-0 hidden md:block shadow-lg md:shadow-none">
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 p-4 md:p-0">          <a href="index.html" class="text-gray-700 hover:text-primary hover:scale-105 transition-all w-full md:w-auto text-center" title="Go to Home page">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-primary hover:scale-105 transition-all w-full md:w-auto text-center" title="Learn more about me">About</a>
+          <a href="techstack.html" class="text-gray-700 hover:text-primary hover:scale-105 transition-all w-full md:w-auto text-center" title="View my technical skills">Tech Stack</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tech Stack Section -->
+  <section class="min-h-screen pt-32 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">      <div class="text-center mb-16 animate-on-scroll">
+        <h1 class="text-4xl font-bold mb-4 gradient-text">My Tech Stack</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Technologies and tools I use to bring ideas to life</p>
+      </div>
+        <div class="grid grid-cols-1 min-[300px]:grid-cols-2 min-[555px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-html" data-icon="vscode-icons:file-type-html"></span>
+            <span class="text-gray-600 font-medium">HTML</span>
+          </div>
+        </div>
+        
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-css" data-icon="vscode-icons:file-type-css"></span>
+            <span class="text-gray-600 font-medium">CSS</span>
+          </div>
+        </div>
+        
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-js" data-icon="logos:javascript"></span>
+            <span class="text-gray-600 font-medium">JavaScript</span>
+          </div>
+        </div>
+        
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-tailwind" data-icon="logos:tailwindcss-icon"></span>
+            <span class="text-gray-600 font-medium">Tailwind CSS</span>
+          </div>
+        </div>
+        
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-git" data-icon="logos:git"></span>
+            <span class="text-gray-600 font-medium">Git</span>
+          </div>
+        </div>
+        
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-vscode" data-icon="vscode-icons:file-type-vscode"></span>
+            <span class="text-gray-600 font-medium">VS Code</span>
+          </div>
+        </div>
+        
+        <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-github" data-icon="logos:github-icon"></span>
+            <span class="text-gray-600 font-medium">GitHub</span>
+          </div>
+        </div>
+          <div class="tech-card p-6 bg-white rounded-xl shadow-lg hover:shadow-xl">
+          <div class="flex flex-col items-center space-y-3">
+            <span class="iconify w-16 h-16 tech-android-studio" data-icon="devicon:androidstudio"></span>
+            <span class="text-gray-600 font-medium">Android Studio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
